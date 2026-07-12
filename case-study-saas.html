@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: SaaS Invoice Automation | Axxeler</title>
+    <meta name="description" content="How a SaaS startup recovered $12K/month through automated invoice generation and failed payment recovery workflows.">
+    <link rel="icon" type="image/x-icon" href="assets/images/brand/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/brand/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2779539615736531');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2779539615736531&ev=PageView&noscript=1" / loading="lazy" alt=""></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
+    <!-- SEO & Open Graph Tags -->
+    <link rel="canonical" href="https://axxeler.in/case-study-saas.html">
+    <meta property="og:title" content="Case Study: SaaS Invoice Automation | Axxeler">
+    <meta property="og:description" content="How a SaaS startup recovered $12K/month through automated invoice generation and failed payment recovery workflows.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axxeler.in/case-study-saas.html">
+    <meta property="og:image" content="https://axxeler.in/assets/images/brand/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/brand/Asset 2.png" alt="Axxeler Logo" class="logo-img" onerror="this.style.display='none'" loading="lazy">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="community.html" class="nav-link">Community</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="casestudies.html" class="nav-link active">Case Studies</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary">Book Your Free Audit</a>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="casestudies.html" class="nav-link">Case Studies</a>
+        <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary" style="margin-top: 24px;">Book Your Free Audit</a>
+    </div>
+
+    <main style="padding-top: 120px;">
+        
+        <!-- HERO -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                    <span class="section-tag">CASE STUDY</span>
+                    <h1 class="h1-hero" style="font-size: clamp(30px, 6vw, 48px); margin-bottom: 24px;">SaaS Startup Recovers $12K/Month with Invoice Automation</h1>
+                    <p class="body-text" style="max-width: 800px; margin: 0 auto; font-size: 18px;">Automated failed-payment recovery and invoice generation eliminated the need to hire a full-time accounts receivable clerk.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE CHALLENGE -->
+        <section style="padding: 80px 0; background-color: var(--bg-dark);">
+            <div class="container">
+                <div class="grid-2" style="gap: 60px; align-items: start;">
+                    <div class="reveal">
+                        <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">The Problem</h3>
+                        <p class="body-text" style="font-size: 16px; line-height: 1.8; margin-bottom: 24px;">A B2B SaaS startup with 200+ paying customers was losing thousands monthly:</p>
+                        
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; font-size: 16px;">
+                                <span style="color: #FF6B6B; font-weight: bold;">✗</span>
+                                <span>Failed payments not retried (lost 5-10% of monthly revenue)</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; font-size: 16px;">
+                                <span style="color: #FF6B6B; font-weight: bold;">✗</span>
+                                <span>Manual invoicing taking 20+ hours/month</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; font-size: 16px;">
+                                <span style="color: #FF6B6B; font-weight: bold;">✗</span>
+                                <span>No system to track overdue accounts</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; font-size: 16px;">
+                                <span style="color: #FF6B6B; font-weight: bold;">✗</span>
+                                <span>Manual accounting entries in QuickBooks</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="reveal" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%); border-radius: 20px; padding: 48px; color: white;">
+                        <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 24px; color: white;">The Impact</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg></span>
+                                <div>
+                                    <strong>$12K/month in lost revenue</strong> from failed payments
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m7 14 4-4 3 3 5-6"></path></svg></span>
+                                <div>
+                                    <strong>20+ hours/month on invoicing</strong> that could be development
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THE SOLUTION -->
+        <section style="padding: 80px 0;">
+            <div class="container">
+                <div class="reveal" style="margin-bottom: 48px;">
+                    <span class="section-tag">THE SOLUTION</span>
+                    <h2 class="section-title" style="margin-bottom: 32px;">Automated Invoice & Payment Recovery</h2>
+                </div>
+
+                <div style="background: var(--bg-dark); border-radius: 20px; padding: 48px; margin-bottom: 48px;">
+                    <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 32px; text-align: center;">The Workflow</h3>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 24px; max-width: 700px; margin: 0 auto;">
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">1</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">Monthly Billing Trigger</h4>
+                                <p class="body-text">On the 1st of each month, Zapier pulls all active subscriptions from their Stripe account</p>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">2</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">Auto-Generate Invoices</h4>
+                                <p class="body-text">For each customer, invoice automatically generated with proper dates, amounts, line items</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">3</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">Send to Customer</h4>
+                                <p class="body-text">Invoice automatically emailed to customer with payment instructions</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">4</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">Failed Payment Detection</h4>
+                                <p class="body-text">If payment fails, system automatically queues retry for 3 days later with new card info request</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">5</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">QuickBooks Sync</h4>
+                                <p class="body-text">Paid invoices automatically logged to QuickBooks with proper account coding</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 16px; align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; flex-shrink: 0;">6</div>
+                            <div>
+                                <h4 style="font-weight: 800; margin-bottom: 8px;">Overdue Alerts</h4>
+                                <p class="body-text">Slack alert for any invoice 15+ days overdue → manual follow-up if needed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="gap: 60px;">
+                    <div class="reveal">
+                        <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Tech Stack</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: center;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m17 7-5-5-5 5"></path><path d="m17 17-5 5-5-5"></path></svg></span>
+                                <span><strong>Stripe</strong> - Payment processor</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: center;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m17 7-5-5-5 5"></path><path d="m17 17-5 5-5-5"></path></svg></span>
+                                <span><strong>Airtable</strong> - Invoice storage</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: center;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m17 7-5-5-5 5"></path><path d="m17 17-5 5-5-5"></path></svg></span>
+                                <span><strong>QuickBooks</strong> - Accounting</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px; align-items: center;">
+                                <span class="inline-icon-wrap"><svg class="inline-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"></path><path d="m17 7-5-5-5 5"></path><path d="m17 17-5 5-5-5"></path></svg></span>
+                                <span><strong>Zapier</strong> - Workflow</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="reveal">
+                        <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Timeline</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px;">
+                                <strong style="min-width: 100px;">Week 1:</strong>
+                                <span>Audit current billing process</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px;">
+                                <strong style="min-width: 100px;">Week 2:</strong>
+                                <span>Build Zapier workflows</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px;">
+                                <strong style="min-width: 100px;">Week 3:</strong>
+                                <span>Test with sample invoices</span>
+                            </li>
+                            <li style="display: flex; gap: 12px; margin-bottom: 16px;">
+                                <strong style="min-width: 100px;">Week 4:</strong>
+                                <span>Live launch with full customer base</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS -->
+        <section style="padding: 80px 0; background-color: var(--bg-dark);">
+            <div class="container">
+                <div class="reveal" style="margin-bottom: 64px;">
+                    <span class="section-tag">RESULTS</span>
+                    <h2 class="section-title">$12K/Month Recovered</h2>
+                </div>
+
+                <div class="grid-2" style="gap: 40px; margin-bottom: 60px;">
+                    <div class="reveal" style="background: linear-gradient(135deg, var(--primary) 0%, #5b6aff 100%); border-radius: 20px; padding: 48px; color: white; text-align: center;">
+                        <div style="font-size: clamp(34px, 9vw, 56px); font-weight: 800; margin-bottom: 16px;">$12K</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: white;">Monthly Recovery</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">From automatic retry of failed payments. Now collected instead of lost.</p>
+                    </div>
+
+                    <div class="reveal" style="background: linear-gradient(135deg, #FF6B6B 0%, #FF8E72 100%); border-radius: 20px; padding: 48px; color: white; text-align: center;">
+                        <div style="font-size: clamp(34px, 9vw, 56px); font-weight: 800; margin-bottom: 16px;">20 hrs</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: white;">Time Freed</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">Monthly invoicing automated. Zero manual data entry.</p>
+                    </div>
+
+                    <div class="reveal" style="background: linear-gradient(135deg, #4ECB71 0%, #2ABF45 100%); border-radius: 20px; padding: 48px; color: white; text-align: center;">
+                        <div style="font-size: clamp(34px, 9vw, 56px); font-weight: 800; margin-bottom: 16px;">100%</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: white;">Accuracy</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">Zero invoicing errors. Perfect QuickBooks entries.</p>
+                    </div>
+
+                    <div class="reveal" style="background: linear-gradient(135deg, #FFD93D 0%, #FFC107 100%); border-radius: 20px; padding: 48px; color: #333; text-align: center;">
+                        <div style="font-size: clamp(34px, 9vw, 56px); font-weight: 800; margin-bottom: 16px;">$144K</div>
+                        <h3 style="font-size: 20px; margin-bottom: 8px; color: #333;">Annual Impact</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">$12K/month × 12 = $144K additional annual revenue</p>
+                    </div>
+                </div>
+
+                <div class="reveal" style="background: var(--primary); color: white; border-radius: 12px; padding: 32px; text-align: center;">
+                    <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 16px; color: white;">ROI</h3>
+                    <p style="font-size: 18px; margin-bottom: 16px; opacity: 0.95;">Their $12,000 automation investment paid for itself in literally the first month. Continues generating revenue every single month.</p>
+                    <div style="font-size: 20px; font-weight: 800; color: #FFD93D;">12x ROI Month 1 | Infinite ROI Ongoing</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section style="padding: 100px 0; background: linear-gradient(135deg, var(--primary) 0%, #5b6aff 100%); position: relative; overflow: hidden;">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="reveal" style="text-align: center;">
+                    <h2 style="font-size: clamp(26px, 6vw, 42px); color: white; margin-bottom: 16px; font-weight: 800;">Ready to Recover Lost Revenue?</h2>
+                    <p style="font-size: 18px; color: rgba(255,255,255,0.9); margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto;">Let's automate your invoicing and stop losing money to failed payments.</p>
+                    <a href="contact.html" class="btn" style="background: white; color: var(--primary); font-weight: 600; font-size: 16px; padding: 16px 40px;">Book Your Free Audit →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background-color: var(--bg-black); border-top: 1px solid var(--surface2); padding: 60px 0 40px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h4 style="margin-bottom: 16px; font-weight: 800;">Axxeler</h4>
+                    <p class="body-text" style="font-size: 14px;">We automate the boring so you can focus on the brilliant.</p>
+                </div>
+                <div>
+                    <h5 style="font-weight: 800; margin-bottom: 16px; font-size: 14px;">NAVIGATION</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px;"><a href="index.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Home</a></li>
+                        <li style="margin-bottom: 12px;"><a href="casestudies.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Case Studies</a></li>
+                        <li style="margin-bottom: 12px;"><a href="about.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 style="font-weight: 800; margin-bottom: 16px; font-size: 14px;">RESOURCES</h5>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 12px;"><a href="blog.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Blog</a></li>
+                        <li style="margin-bottom: 12px;"><a href="services.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Services</a></li>
+                        <li style="margin-bottom: 12px;"><a href="contact.html" style="color: var(--text-muted); text-decoration: none; font-size: 14px;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid var(--surface2); padding-top: 32px; text-align: center;">
+                <p class="body-text" style="font-size: 13px; color: var(--text-muted);">© 2026 Axxeler. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

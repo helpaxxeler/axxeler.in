@@ -1,0 +1,856 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axxeler — Workflow Automation Agency | Zapier Make n8n</title>
+    <meta name="description" content="We build Zapier, Make, and n8n automations that save small businesses 10–30 hours per week. Free audit. 4-week delivery. $5K–$20K flat rate.">
+    <link rel="icon" type="image/x-icon" href="assets/images/brand/favicon.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/brand/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="assets/images/brand/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s) {if(f.fbq)return;n=f.fbq=function(){n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}; if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; n.queue=[];t=b.createElement(e);t.async=!0; t.src=v;s=b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s)}(window, document,'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2779539615736531');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2779539615736531&ev=PageView&noscript=1" / loading="lazy" alt=""></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'light' || (!savedTheme && !systemPrefersDark)) {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    </script>
+
+    <!-- SEO & Open Graph Tags -->
+    <link rel="canonical" href="https://axxeler.in/">
+    <meta property="og:title" content="Axxeler — Workflow Automation Agency | Zapier Make n8n">
+    <meta property="og:description" content="We build Zapier, Make, and n8n automations that save small businesses 10–30 hours per week. Free audit. 4-week delivery. $5K–$20K flat rate.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://axxeler.in/">
+    <meta property="og:image" content="https://axxeler.in/assets/images/brand/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-ring"></div>
+
+    <!-- 1. NAV -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <!-- Using Asset 2.png since it exists locally, with text fallback -->
+                <img src="assets/images/brand/Asset 2.png" alt="Axxeler Logo" class="logo-img" onerror="this.style.display='none'" loading="lazy">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="community.html" class="nav-link">Community</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="casestudies.html" class="nav-link">Case Studies</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary">Book Your Free Audit</a>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div class="mobile-menu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="community.html" class="nav-link">Community</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="casestudies.html" class="nav-link">Case Studies</a>
+        <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary" style="margin-top: 24px;">Book Your Free Audit</a>
+    </div>
+
+    <!-- 2. HERO -->
+    <header id="hero" class="hero mesh-gradient">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        
+
+        <div class="container hero-content">
+            <div class="automation-dashboard" aria-hidden="true">
+                <svg class="dashboard-svg" viewBox="0 0 900 520" focusable="false">
+                    <path class="flow-line line-one" d="M82 156 C224 84 318 94 410 140 S668 178 832 150"/>
+                    <path class="flow-line line-two" d="M84 330 C262 424 414 426 558 378 S720 314 850 342"/>
+                    <path class="flow-line line-three" d="M74 170 C-6 238 2 292 84 330"/>
+                    <path class="flow-line line-four" d="M850 168 C932 236 928 300 850 342"/>
+                    <path class="flow-line line-five" d="M84 330 C178 236 708 232 850 168"/>
+
+                    <g class="workflow-node node-sheets" transform="translate(-180 112)">
+                        <rect class="node-shell" width="192" height="88" rx="14"></rect>
+                        <rect class="node-icon icon-sheets" x="18" y="20" width="38" height="38" rx="10"></rect>
+                        <path class="node-icon-mark" d="M30 30h14M30 39h18M30 48h18M42 30v18"></path>
+                        <text class="node-title" x="72" y="36">Google Sheets</text>
+                        <text class="node-meta" x="72" y="58">Append lead row</text>
+                    </g>
+
+                    <g class="workflow-node node-crm" transform="translate(900 124)">
+                        <rect class="node-shell" width="176" height="80" rx="14"></rect>
+                        <circle class="node-icon icon-crm" cx="38" cy="40" r="20"></circle>
+                        <path class="node-icon-mark" d="M30 40h16M38 32v16"></path>
+                        <text class="node-title" x="72" y="34">CRM</text>
+                        <text class="node-meta" x="72" y="56">Create contact</text>
+                    </g>
+
+                    <g class="workflow-node node-zoho" transform="translate(-190 294)">
+                        <rect class="node-shell" width="180" height="88" rx="14"></rect>
+                        <rect class="node-icon icon-zoho" x="18" y="20" width="38" height="38" rx="10"></rect>
+                        <path class="node-icon-mark" d="M28 47c4-10 24-10 28 0M33 34a7 7 0 1 0 14 0"></path>
+                        <text class="node-title" x="72" y="36">Zoho People</text>
+                        <text class="node-meta" x="72" y="58">Assign owner</text>
+                    </g>
+
+                    <g class="workflow-node node-email" transform="translate(-140 424)">
+                        <rect class="node-shell" width="170" height="86" rx="14"></rect>
+                        <rect class="node-icon icon-email" x="18" y="20" width="38" height="38" rx="10"></rect>
+                        <path class="node-icon-mark" d="M27 34l18 13 18-13M27 34h36v24H27z"></path>
+                        <text class="node-title" x="72" y="36">SMTP Alert</text>
+                        <text class="node-meta" x="72" y="58">Notify admin</text>
+                    </g>
+
+                    <g class="workflow-node node-router" transform="translate(856 410)">
+                        <rect class="node-shell" width="184" height="86" rx="14"></rect>
+                        <rect class="node-icon icon-router" x="18" y="20" width="38" height="38" rx="10"></rect>
+                        <path class="node-icon-mark" d="M29 31h14v14H29zM48 36h10M48 50h10M58 31h8M58 45h8"></path>
+                        <text class="node-title" x="72" y="36">n8n Router</text>
+                        <text class="node-meta" x="72" y="58">Score + branch</text>
+                    </g>
+
+                    <circle class="flow-pulse pulse-one" r="6"></circle>
+                    <circle class="flow-pulse pulse-two" r="6"></circle>
+                </svg>
+            </div>
+
+            <div class="hero-badge reveal">
+                <span class="dot"></span> Now Serving 25+ Businesses Worldwide
+            </div>
+            
+            <h1 class="hero-title reveal">Infrastructure for the <br><span class="text-gradient-sweep">Automated Enterprise</span></h1>
+            <p class="hero-subtitle reveal" style="font-size: 20px; max-width: 650px; margin-left: auto; margin-right: auto;">We engineer bespoke workflows that eliminate manual waste, scale infinitely, and allow your team to operate at the speed of thought.</p>
+
+            <div class="hero-actions reveal">
+                <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary">Book Your Free Audit →</a>
+                <a href="casestudies.html" class="btn magnetic-btn magnetic-btn btn-secondary">See Real Results →</a>
+            </div>
+
+            <div class="hero-stats reveal">
+                <div class="hero-stat">
+                    <div class="stat-number"><span class="counter-num" data-target="10">0</span>x</div>
+                    <div class="label">Faster Processes</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number"><span class="counter-num" data-target="85">0</span>%</div>
+                    <div class="label">Time Saved</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number"><span class="counter-num" data-target="25">0</span>+</div>
+                    <div class="label">Happy Clients</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="stat-number">$<span class="counter-num" data-target="75">0</span>K</div>
+                    <div class="label">Avg Savings/Year</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+
+    <!-- CLIENT LOGOS -->
+    <section style="padding: 40px 0; background-color: var(--bg-black); border-bottom: 1px solid var(--surface2); overflow: hidden;">
+        <div class="container">
+            <p class="section-tag" style="text-align: center; margin-bottom: 24px;">TRUSTED BY INNOVATIVE BRANDS</p>
+        </div>
+        <div class="client-logo-marquee">
+            <img src="assets/images/clients/Aattakalam .png" alt="Aattakalam" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/AK LOGO BLUE BG.png" alt="AK Logo" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/AKT-TEXTILES-LOGO-_1_.png" alt="AKT Textiles" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/D7arena.png" alt="D7 Arena" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Future secure.png" alt="Future Secure" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/game on logoo.png" alt="Game On" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Gonex-labs-final-logo (1).png" alt="Gonex Labs" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/kss mahal.png" alt="KSS Mahal" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/nook.png" alt="Nook" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/one o one.png" alt="One O One" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/picklers 314 (1).png" alt="Picklers 314" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/SPM_LOGO-removebg-preview.png" alt="SPM Logo" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Thesitaralabel-removebg-preview.png" alt="The Sitara Label" class="client-logo-item" loading="lazy">
+            <!-- Duplicated for seamless loop -->
+            <img src="assets/images/clients/Aattakalam .png" alt="Aattakalam" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/AK LOGO BLUE BG.png" alt="AK Logo" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/AKT-TEXTILES-LOGO-_1_.png" alt="AKT Textiles" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/D7arena.png" alt="D7 Arena" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Future secure.png" alt="Future Secure" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/game on logoo.png" alt="Game On" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Gonex-labs-final-logo (1).png" alt="Gonex Labs" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/kss mahal.png" alt="KSS Mahal" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/nook.png" alt="Nook" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/one o one.png" alt="One O One" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/picklers 314 (1).png" alt="Picklers 314" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/SPM_LOGO-removebg-preview.png" alt="SPM Logo" class="client-logo-item" loading="lazy">
+            <img src="assets/images/clients/Thesitaralabel-removebg-preview.png" alt="The Sitara Label" class="client-logo-item" loading="lazy">
+        </div>
+    </section>
+
+    <!-- FEATURED CASE STUDY -->
+    <section style="padding: 80px 0; background-color: var(--bg-dark);">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 60px;">
+                <div class="reveal">
+                    <span class="section-tag">FEATURED INFRASTRUCTURE</span>
+                    <h2 class="section-title" style="margin-bottom: 24px;">Zero-Touch Revenue Recovery</h2>
+                    <p class="body-text" style="margin-bottom: 24px;">We architected an autonomous dunning protocol that intercepts failed payments in Stripe and syncs reconciliations with QuickBooks, eliminating all manual accounts receivable overhead while recovering $12K/month.</p>
+                    <a href="casestudies.html" class="btn magnetic-btn magnetic-btn btn-secondary">Read the Full Case Study →</a>
+                </div>
+                <div class="result-card reveal" style="margin: 0; box-shadow: 0 20px 40px rgba(0,0,0,0.5);">
+                    <div style="display: flex; gap: 8px; align-items: baseline; margin-bottom: 8px;">
+                        <div style="font-size: clamp(32px, 8vw, 48px); font-weight: 800; color: var(--primary);">$12K</div>
+                        <div style="font-size: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted);">Recovered Monthly</div>
+                    </div>
+                    <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 24px;">
+                        <span class="service-tag">Stripe</span>
+                        <span class="service-tag">QuickBooks</span>
+                        <span class="service-tag">Zapier</span>
+                    </div>
+                    <p class="body-text" style="font-size: 14px;">"Axxeler didn't just save us time, they fundamentally increased our monthly recurring revenue without us lifting a finger."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THE PROBLEM -->
+    <section id="problem">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">THE INFRASTRUCTURE DEBT</span>
+                <h2 class="section-title">Manual Processes Are A Liability</h2>
+                <p class="body-text" style="max-width: 600px; margin: 0 auto;">Every hour your team spends on repetitive data entry is an hour stolen from strategic growth. We eliminate operational debt.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    </div>
+                    <h3 class="card-title">Time Theft</h3>
+                    <p class="body-text">Your team spends 20+ hours/week on repetitive tasks.</p>
+                    <p class="problem-consequence">That's $30K–40K/year in wasted salary.</p>
+                    <p class="problem-solution">We automate it. In 4 weeks, you recoup your investment.</p>
+                </div>
+                
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+                    </div>
+                    <h3 class="card-title">Human Error</h3>
+                    <p class="body-text">Manual entry = mistakes. Wrong data in your system.</p>
+                    <p class="problem-consequence">Bad decisions based on bad data.</p>
+                    <p class="problem-solution">Automated workflows have zero human error.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    </div>
+                    <h3 class="card-title">Bottlenecks & Delays</h3>
+                    <p class="body-text">Everything waits for someone to manually process it.</p>
+                    <p class="problem-consequence">Slow customer experience, slow growth.</p>
+                    <p class="problem-solution">Workflows run 24/7. Instant processing.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3 class="card-title">Tool Overload</h3>
+                    <p class="body-text">You need 5 different tools to do what one could do.</p>
+                    <p class="problem-consequence">$500+/month in software costs.</p>
+                    <p class="problem-solution">We consolidate everything into one powerful workflow.</p>
+                </div>
+
+                <div class="problem-card reveal">
+                    <div class="problem-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                    </div>
+                    <h3 class="card-title">No Visibility</h3>
+                    <p class="body-text">You don't know what's happening in your workflows.</p>
+                    <p class="problem-consequence">You can't optimize what you can't see.</p>
+                    <p class="problem-solution">We build with dashboards & monitoring built in.</p>
+                </div>
+            </div>
+
+            <div class="problem-example reveal">
+                "Sarah from marketing spends 10 hours/week copying data from forms to spreadsheets to email. That's 520 hours/year. At $25/hr = $13,000 wasted — every single year."
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PROCESS -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">OUR PROCESS</span>
+                <h2 class="section-title">Our 4-Week Automation Blueprint</h2>
+                <p class="body-text" style="max-width: 600px; margin: 0 auto;">A proven methodology. Clear milestones. No surprises.</p>
+            </div>
+
+            <div class="process-timeline">
+                  <div class="process-step reveal-stagger">
+                      <div class="step-number">1</div>
+                      <div class="step-content">
+                          <div class="step-label">INFRASTRUCTURE AUDIT</div>
+                          <h3 class="step-title">Discovery & Architecture</h3>
+                          <p class="body-text">We map your operational bottlenecks. We identify exactly where capital is bleeding out due to manual processes and architect a custom automation pipeline to eliminate it.</p>
+                      </div>
+                  </div>
+  
+                  <div class="process-step reveal-stagger">
+                      <div class="step-number">2</div>
+                      <div class="step-content">
+                          <div class="step-label">DEPLOYMENT PROTOCOL</div>
+                          <h3 class="step-title">Rapid Engineering</h3>
+                          <p class="body-text">We build secure, zero-latency workflows on enterprise-grade infrastructure. No guesswork. Just rigorous, scalable architecture designed for your stack.</p>
+                      </div>
+                  </div>
+  
+                  <div class="process-step reveal-stagger">
+                      <div class="step-number">3</div>
+                      <div class="step-content">
+                          <div class="step-label">STRESS TESTING</div>
+                          <h3 class="step-title">Edge-Case Resilience</h3>
+                          <p class="body-text">Before launch, we simulate edge cases, API failures, and high-load traffic to ensure your new infrastructure never breaks under pressure.</p>
+                      </div>
+                  </div>
+  
+                  <div class="process-step reveal-stagger">
+                      <div class="step-number">4</div>
+                      <div class="step-content">
+                          <div class="step-label">GO LIVE</div>
+                          <h3 class="step-title">Scale Without Constraint</h3>
+                          <p class="body-text">We flip the switch. Your operations move instantly from bottlenecked to infinitely scalable. We monitor telemetry 24/7 to ensure zero downtime.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- 6. SERVICES / SOLUTIONS -->
+    <section id="solutions">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">OUR SERVICES</span>
+                <h2 class="section-title">Common Workflows We Build</h2>
+                <p class="body-text" style="max-width: 600px; margin: 0 auto;">Every business has different pain points. These are the automation types we specialize in.</p>
+            </div>
+
+            <div class="grid-2" style="gap: 40px;">
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">01</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3 class="card-title">Lead Capture → Sales Pipeline</h3>
+                    <p class="body-text">Lead fills form → instantly added to your CRM → email sent → Slack alert to sales → calendar invite created. 25 hours/month saved.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Zapier</span>
+                        <span class="service-tag">HubSpot</span>
+                        <span class="service-tag">Slack</span>
+                    </div>
+                </div>
+
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">02</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                    </div>
+                    <h3 class="card-title">Customer Onboarding</h3>
+                    <p class="body-text">Customer purchases → welcome email sent → account created → team member assigned → onboarding checklist. Onboarding: 3 days → 30 mins.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Make.com</span>
+                        <span class="service-tag">Email</span>
+                        <span class="service-tag">CRM</span>
+                    </div>
+                </div>
+
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">03</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                    </div>
+                    <h3 class="card-title">Invoice & Payment Automation</h3>
+                    <p class="body-text">Project complete → invoice generated → sent to client → payment received → auto-logged → receipt to accounting. 4 hours/week → 30 minutes.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Stripe</span>
+                        <span class="service-tag">QuickBooks</span>
+                        <span class="service-tag">Gmail</span>
+                    </div>
+                </div>
+
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">04</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                    </div>
+                    <h3 class="card-title">Data Sync & Integration</h3>
+                    <p class="body-text">Data entered once → instantly synced to CRM, email, accounting, spreadsheets, Slack. Zero manual re-entry. 100% data accuracy.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">n8n</span>
+                        <span class="service-tag">Airtable</span>
+                        <span class="service-tag">Google Sheets</span>
+                    </div>
+                </div>
+
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">05</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"></path><path d="m22 2-7 20-4-9-9-4 20-7z"></path></svg>
+                    </div>
+                    <h3 class="card-title">Content Distribution</h3>
+                    <p class="body-text">Blog post published → auto-posted to Twitter, LinkedIn, Facebook → added to email newsletter queue → Slack notification → analytics.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Buffer</span>
+                        <span class="service-tag">Mailchimp</span>
+                        <span class="service-tag">LinkedIn</span>
+                    </div>
+                </div>
+
+                <div class="service-card glow-card reveal-stagger">
+                    <span class="num-label">06</span>
+                    <div class="icon-box">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                    </div>
+                    <h3 class="card-title">Feedback & Surveys</h3>
+                    <p class="body-text">Project complete → survey sent → responses collected → low scores flagged for follow-up → high scores used for testimonials → data to CRM.</p>
+                    <div class="service-tags">
+                        <span class="service-tag">Typeform</span>
+                        <span class="service-tag">Airtable</span>
+                        <span class="service-tag">Slack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. RESULTS -->
+    <section id="results" style="background-color: var(--bg-black);">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">REAL RESULTS</span>
+                <h2 class="section-title">Real Numbers from Real Clients</h2>
+                <p class="body-text" style="max-width: 600px; margin: 0 auto;">Not projections. Not estimates. Actual results from businesses like yours.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="result-card reveal">
+                    <div class="section-tag">E-COMMERCE</div>
+                    <div class="result-metric">18<span class="symbol">hrs</span></div>
+                    <p class="body-text" style="color: var(--text-primary); font-weight: 600; margin-bottom: 12px;">Saved every single week</p>
+                    <p class="body-text" style="margin-bottom: 24px;">Handmade goods seller (10 employees) had manual order processing taking 20 hrs/week. We built Order → Inventory → Accounting → Email automation.</p>
+                    <div class="service-tags" style="margin-top: 0;">
+                        <span class="service-tag">Investment: $8,500</span>
+                        <span class="service-tag">Paid back in 4 months</span>
+                    </div>
+                </div>
+
+                <div class="result-card reveal">
+                    <div class="section-tag">DIGITAL AGENCY</div>
+                    <div class="result-metric">35<span class="symbol">%</span></div>
+                    <p class="body-text" style="color: var(--text-primary); font-weight: 600; margin-bottom: 12px;">More deals closed</p>
+                    <p class="body-text" style="margin-bottom: 24px;">Digital marketing agency lost leads between ad forms and CRM. We built multi-channel lead capture → nurture → sales notifications.</p>
+                    <div class="service-tags" style="margin-top: 0;">
+                        <span class="service-tag">Investment: $15,000</span>
+                        <span class="service-tag">ROI: 300% in year one</span>
+                    </div>
+                </div>
+
+                <div class="result-card reveal">
+                    <div class="section-tag">SAAS STARTUP</div>
+                    <div class="result-metric">3<span class="symbol">days</span></div>
+                    <p class="body-text" style="color: var(--text-primary); font-weight: 600; margin-bottom: 12px;">→ 30 minutes onboarding</p>
+                    <p class="body-text" style="margin-bottom: 24px;">B2B SaaS company (8 employees) with 3–4 day manual onboarding. We automated the entire onboarding workflow end-to-end.</p>
+                    <div class="service-tags" style="margin-top: 0;">
+                        <span class="service-tag">Investment: $12,000</span>
+                        <span class="service-tag">Paid back in 3 months</span>
+                    </div>
+                </div>
+
+                <div class="result-card reveal">
+                    <div class="section-tag">REAL ESTATE</div>
+                    <div class="result-metric">$50<span class="symbol">K</span></div>
+                    <p class="body-text" style="color: var(--text-primary); font-weight: 600; margin-bottom: 12px;">Saved in first year</p>
+                    <p class="body-text" style="margin-bottom: 24px;">Real estate agency manually processing leads, contracts, and follow-ups. We automated their entire sales and admin pipeline.</p>
+                    <div class="service-tags" style="margin-top: 0;">
+                        <span class="service-tag">Investment: $10,000</span>
+                        <span class="service-tag">5x ROI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" style="background-color: var(--bg-dark); padding: 80px 0;">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 48px;">
+                <span class="section-tag">RECOGNITION</span>
+                <h2 class="section-title">Industry Recognized Experts</h2>
+            </div>
+            
+            <div class="grid-2 reveal" style="align-items: center; gap: 60px;">
+                <div class="award-carousel-container" style="border-radius: 12px; overflow: hidden; border: 1px solid var(--surface2); position: relative; max-height: 400px; height: 100%; min-height: 300px;">
+                    <img src="assets/images/awards/award.jpeg" alt="Axxeler Industry Award" class="award-slide active" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background-color: var(--bg-black); opacity: 1; transition: opacity 0.8s ease;" loading="lazy">
+                    <img src="assets/images/awards/Award%202.jpeg" alt="Axxeler Industry Award 2" class="award-slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background-color: var(--bg-black); opacity: 0; transition: opacity 0.8s ease;" loading="lazy">
+                    <img src="assets/images/awards/award%203.jpeg" alt="Axxeler Industry Award 3" class="award-slide" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; background-color: var(--bg-black); opacity: 0; transition: opacity 0.8s ease;" loading="lazy">
+                </div>
+                
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div class="service-card glow-card" style="padding: 32px; border-left: 4px solid var(--primary);">
+                        <div style="margin-bottom: 12px; color: var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                        </div>
+                        <h4 style="font-size: 20px; margin-bottom: 8px;">Eagle Award from Industry</h4>
+                        <p class="body-text" style="font-size: 15px;">Recognized for exceptional automation architecture and business growth impact.</p>
+                    </div>
+                    
+                    <div class="service-card glow-card" style="padding: 32px; border-left: 4px solid var(--primary);">
+                        <div style="margin-bottom: 12px; color: var(--primary);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        </div>
+                        <h4 style="font-size: 20px; margin-bottom: 8px;">TN Digital Summit 2026</h4>
+                        <p class="body-text" style="font-size: 15px;">Featured as a top workflow automation agency driving SMB success in the digital era.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. WHY US -->
+    <section id="why" class="why-section">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">WHY AXXELER</span>
+                <h2 class="section-title">Why 25+ Small Businesses Trust Us</h2>
+                <p class="body-text" style="max-width: 600px; margin: 0 auto;">Other agencies complicate it. We simplify it.</p>
+                <p class="body-text" style="max-width: 800px; margin: 20px auto 0; font-size: 16px; color: var(--text-muted);">As a leading workflow automation agency, Axxeler specializes in Zapier, Make (Integromat), n8n, and custom API integrations. We transform manual business processes into seamless, automated pipelines, ensuring your lead capture and CRM systems operate flawlessly 24/7.</p>
+            </div>
+
+            <div class="grid-2">
+                <div class="why-visual reveal">
+                    <div class="why-visual-grid"></div>
+                    <div class="logo-mask" style="position: absolute; width: 250px; height: 250px; z-index: 10; animation: float 8s ease-in-out infinite alternate; background-color: var(--primary); -webkit-mask-image: url('assets/images/brand/logo.png'); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center; mask-image: url('assets/images/brand/logo.png'); mask-size: contain; mask-repeat: no-repeat; mask-position: center;"></div>
+                    
+                    <div class="why-floating-badge badge-1">
+                        <div class="badge-title">25+</div>
+                        <div class="badge-sub">Businesses Automated</div>
+                    </div>
+                    <div class="why-floating-badge badge-2">
+                        <div class="badge-title">$3M+</div>
+                        <div class="badge-sub">Saved Collectively</div>
+                    </div>
+                    <div class="why-floating-badge badge-3" style="background-color: var(--primary); color: #fff; border: none;">
+                        <div class="badge-title" style="color: #fff; font-size: 18px;">4-Week</div>
+                        <div class="badge-sub" style="color: rgba(255,255,255,0.8);">Delivery Guarantee</div>
+                    </div>
+                </div>
+
+                <div class="why-list reveal">
+                    <div class="why-item">
+                        <div class="why-num">01.</div>
+                        <div class="why-text">
+                            <h4>We Own the Entire Process</h4>
+                            <p>Audit → Design → Build → Test → Train → Support. One team. Zero gaps. No hiring multiple consultants.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-num">02.</div>
+                        <div class="why-text">
+                            <h4>Flat-Rate Pricing (No Surprises)</h4>
+                            <p>$5K–20K depending on complexity. Quoted upfront. No 3-month "discovery phases."</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-num">03.</div>
+                        <div class="why-text">
+                            <h4>We Train Your Team</h4>
+                            <p>After we build it, your team can maintain it. You're not locked into us forever.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-num">04.</div>
+                        <div class="why-text">
+                            <h4>Proven Framework</h4>
+                            <p>We've done this 25+ times. We know what works and what fails before we start.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-num">05.</div>
+                        <div class="why-text">
+                            <h4>Real Ongoing Support</h4>
+                            <p>We don't disappear after launch. Monthly check-ins. We optimize as you grow.</p>
+                        </div>
+                    </div>
+                    <div class="why-item">
+                        <div class="why-num">06.</div>
+                        <div class="why-text">
+                            <h4>Your Success = Our Reputation</h4>
+                            <p>Our business runs on referrals. If you win, we win. Simple.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 9. TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">TESTIMONIALS</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+            </div>
+
+            <div class="grid-3">
+                <div class="testi-card reveal">
+                    <div class="testi-quote-mark">"</div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="body-text" style="font-style: italic; margin-bottom: 24px;">"axxeler.in saved us $50K in the first year. The team did everything — we just showed them how we worked. Highly recommend."</p>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="testi-avatar">J</div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 14px;">John Smith</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">CEO, E-commerce Store</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <div class="testi-quote-mark">"</div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="body-text" style="font-style: italic; margin-bottom: 24px;">"Our sales team went from processing leads manually to closing more deals. axxeler.in's automation freed us up to focus on what actually matters."</p>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="testi-avatar">S</div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 14px;">Sarah Chen</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">VP Sales, Digital Agency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card reveal">
+                    <div class="testi-quote-mark">"</div>
+                    <div class="testi-stars">★★★★★</div>
+                    <p class="body-text" style="font-style: italic; margin-bottom: 24px;">"I was skeptical about automation. axxeler.in showed me how simple it could be. Now we can't imagine working without it."</p>
+                    <div style="display: flex; align-items: center; gap: 16px;">
+                        <div class="testi-avatar">M</div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 14px;">Mike Johnson</div>
+                            <div style="font-size: 12px; color: var(--text-muted);">Founder, SaaS Startup</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRE-FOOTER CTA -->
+    <section class="pre-footer-cta">
+        <div class="container reveal">
+            <h2 class="cta-title">Ready to Stop Wasting<br>1000s of Hours a Year?</h2>
+            <p class="body-text" style="max-width: 600px; margin: 24px auto 40px; font-size: 18px;">Book your free 30-minute automation audit. We'll map your workflows, calculate your exact ROI, and show you what's possible. No commitment. Just clarity.</p>
+            <a href="contact.html" class="btn magnetic-btn magnetic-btn btn-primary" style="font-size: 18px; padding: 20px 48px; border-radius: 50px;">Book Your Free Audit →</a>
+        </div>
+    </section>
+
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="reveal" style="text-align: center; margin-bottom: 64px;">
+                <span class="section-tag">COMMON QUESTIONS</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="reveal" style="max-width: 800px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">Do I need technical skills to use the automations? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">Not at all. We build the systems so you don't have to. During the handoff, we train you and your team on how to use and monitor the dashboards, requiring zero coding knowledge.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What happens if an automation breaks? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">We build robust error handling into every workflow. If an edge case occurs, the system automatically alerts us. Plus, our ongoing support plans mean we monitor your systems 24/7.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does the process take? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">From our kickoff call to full deployment, our standard timeline is exactly 4 weeks. We believe in moving fast without breaking things.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Will this integrate with my current tools? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">Yes! We specialize in connecting the tools you already use—whether it's HubSpot, Slack, Salesforce, Google Sheets, Stripe, or custom APIs.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you build automations using Zapier, Make, or n8n? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">Absolutely. As a dedicated workflow automation agency, we are certified Zapier Experts, Make (Integromat) partners, and n8n developers. We choose the right integration platform based on your data privacy needs and budget.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is workflow automation and how does it help my business? <span class="faq-icon">+</span></div>
+                    <div class="faq-answer">Workflow automation involves using software to connect your existing apps (like HubSpot, Slack, and Gmail) to perform tasks automatically. This eliminates manual data entry, prevents leads from falling through the cracks, and scales your business operations effortlessly.</div>
+                </div>
+            </div>
+            <div style="margin-top: 40px; text-align: center; color: var(--text-muted); font-size: 14px;">
+                <p>Axxeler provides enterprise-grade automation solutions for small businesses, agencies, and startups. By leveraging modern API connectivity and low-code platforms, we ensure your business remains agile, scalable, and highly efficient in an increasingly digital-first economy.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 14. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">Axxeler</div>
+                    <p>We automate the boring so you can focus on the brilliant.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/axxeler/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@baranikumargd" target="_blank" class="social-link" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                        </a>
+                        <a href="https://www.instagram.com/axxeler.in/" target="_blank" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://x.com/Baranikumargd" target="_blank" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Lead Capture Automation</a></li>
+                        <li><a href="services.html">Customer Onboarding</a></li>
+                        <li><a href="services.html">Data Sync & Integration</a></li>
+                        <li><a href="services.html">Invoice Automation</a></li>
+                        <li><a href="services.html">Sales Process Automation</a></li>
+                        <li><a href="services.html">Communication Automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="casestudies.html">Case Studies</a></li>
+                        <li><a href="index.html#solutions">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Industries</h4>
+                    <ul>
+                        <li><a href="case-study-ecommerce.html">E-Commerce</a></li>
+                        <li><a href="case-study-digital-agency.html">Digital Agencies</a></li>
+                        <li><a href="case-study-saas.html">SaaS Startups</a></li>
+                        <li><a href="case-study-realestate.html">Real Estate</a></li>
+                        <li><a href="casestudies.html">Healthcare</a></li>
+                        <li><a href="casestudies.html">Small Business</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>© <span id="year"></span> Axxeler. All rights reserved. Built to automate your future.</div>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="cookies.html">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Lead Magnet Button -->
+    <button id="leadMagnetBtn" class="floating-lead-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        <span>Free 30-Day Growth Plan</span>
+    </button>
+
+    <!-- Lead Magnet Modal -->
+    <div id="leadMagnetModal" class="lead-magnet-modal">
+        <div class="lead-modal-content">
+            <button class="lead-modal-close" id="closeLeadModal">&times;</button>
+            <div class="lead-modal-header">
+                <h3>Download Your Free 30-Day Growth Plan</h3>
+                <p>Enter your details below to get instant access to the exact automation roadmap we use to scale businesses.</p>
+            </div>
+            <form id="leadForm" action="https://api.web3forms.com/submit" method="POST" data-download="assets/docs/Axxeler_Advanced_30Day_AI_Roadmap.pdf">
+                <input type="hidden" name="access_key" value="0b8a02ef-7e0e-4578-b69d-25efda6dcf10">
+                <input type="hidden" name="subject" value="New Lead Magnet Download — 30-Day Growth Plan">
+                <input type="hidden" name="from_name" value="Axxeler Website">
+                <input type="text" name="name" class="form-control" required placeholder="Your Name" style="margin-bottom: 16px;">
+                <input type="email" name="email" class="form-control" required placeholder="Your Email" style="margin-bottom: 16px;">
+                <input type="tel" name="phone" class="form-control" required placeholder="Your Phone Number" style="margin-bottom: 24px;">
+                <button type="submit" class="btn magnetic-btn magnetic-btn btn-primary" style="width: 100%; padding: 16px; font-size: 16px;">Send Me The Plan →</button>
+            </form>
+            <div class="form-note" style="margin-top: 16px; text-align: center;">We respect your privacy. No spam.</div>
+        </div>
+    </div>
+
+    <!-- Form Success Modal -->
+    <div id="successModal" class="form-success-modal">
+        <div class="modal-content">
+            <div class="modal-icon" style="color: #22c55e;">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <h3 class="card-title" style="font-size: 24px;">Audit Request Sent!</h3>
+            <p class="body-text">We've received your information and will be in touch within 24 hours to schedule your free audit.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
