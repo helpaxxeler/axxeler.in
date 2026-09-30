@@ -1858,7 +1858,7 @@ select.form-control option {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 36px;
-  max-width: 1200px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
