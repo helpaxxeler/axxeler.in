@@ -63,6 +63,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="community.html">Community</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="casestudies.html">Case Studies</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>

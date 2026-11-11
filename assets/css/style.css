@@ -777,6 +777,21 @@ select.form-control option {
   margin: 16px 0;
 }
 
+/* Compact desktop nav (laptops/tablets landscape) so all links fit on one line */
+@media (min-width: 901px) and (max-width: 1240px) {
+  .nav-links { gap: 18px; }
+  .nav-link { font-size: 13px; white-space: nowrap; }
+  .nav-actions { gap: 8px; }
+  .nav-actions .btn { padding: 10px 16px; font-size: 13px; white-space: nowrap; }
+}
+
+/* Below this width the 8 links no longer fit: use the existing hamburger menu */
+@media (min-width: 901px) and (max-width: 1060px) {
+  .nav-links { display: none; }
+  .nav-actions .btn { display: none; }
+  .hamburger { display: block; }
+}
+
 @media (max-width: 900px) {
   .nav-links { display: none; }
   .nav-actions .btn { display: none; }
