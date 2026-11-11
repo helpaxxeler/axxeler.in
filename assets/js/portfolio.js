@@ -166,8 +166,6 @@
       if (!src) return;
       lastTrigger = trigger || card.querySelector('[data-open-project]');
 
-      modal.setAttribute('data-accent', card.getAttribute('data-accent') || 'cyan');
-
       visualSlot.innerHTML = '';
       var visual = card.querySelector('.pf-card-visual');
       if (visual) {
@@ -291,7 +289,8 @@
     var ctx = canvas.getContext('2d');
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = 0, h = 0, particles = [], running = false, inView = true, raf = null;
-    var COLORS = ['0,245,255', '168,85,247', '255,60,172'];
+    // Axxeler brand: --primary #6A5BFF and --accent-light #8B7EFF
+    var COLORS = ['106,91,255', '139,126,255'];
 
     function setup() {
       w = canvas.offsetWidth;
@@ -340,7 +339,7 @@
               ctx.beginPath();
               ctx.moveTo(particles[a].x, particles[a].y);
               ctx.lineTo(particles[b].x, particles[b].y);
-              ctx.strokeStyle = 'rgba(0,245,255,' + (0.12 * (1 - d2 / 10000)).toFixed(3) + ')';
+              ctx.strokeStyle = 'rgba(106,91,255,' + (0.14 * (1 - d2 / 10000)).toFixed(3) + ')';
               ctx.lineWidth = 1;
               ctx.stroke();
             }
